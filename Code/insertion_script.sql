@@ -1,0 +1,1 @@
+--md5(upper(trim('business key')))
