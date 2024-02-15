@@ -22,16 +22,3 @@ CREATE TABLE IF NOT EXISTS product_satellite (
     FOREIGN KEY (product_key) REFERENCES product_hub(product_key)
 );
 
-
-"""
-drop table sales_satellite;
-CREATE TABLE IF NOT EXISTS sales_satellite (
-    sales_link_key INT,
-    sales_amount DECIMAL(18, 2) NOT NULL,
-    discount DECIMAL(18,2),
-    sales_date timestamp NOT NULL,
-    load_date TIMESTAMP NOT NULL,
-    source varchar,
-    FOREIGN KEY (sales_key) REFERENCES sales_hub(sales_key)
-);
-"""
